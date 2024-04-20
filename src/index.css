@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --primary: #5c2731;
+    --secondary: #ead3c1;
+    --wild: #f9f871;
 }
+*{
+    font-family:"Sansita";
+    padding:0px;
+    margin:0px;
+    border:none;
+    box-sizing:border-box;
+    color:var(--secondary);
+    font-size:26px;
+    text-decoration:none;
+    user-select:none;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
+body{
+    background-image: url("./assets/others/wooden-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:140vh;
+    min-width:100vw;
+    position:relative;
+}
+body::-webkit-scrollbar{display:none;}

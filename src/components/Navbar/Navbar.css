@@ -1,0 +1,65 @@
+/*
+navbar - 96px*/
+*{
+    user-select:none;
+}
+nav {
+    background : var(--primary);
+    min-width:100%;
+    width:100%;
+    padding:0.5rem 1rem;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+
+
+.nav-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:47rem;
+    padding: 0 1rem;
+    margin:0 auto;
+}
+.nav-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+}
+.nav-links a:hover{
+    color:var(--wild);
+}
+.user-links{
+    display:flex;
+    gap: 0.5rem;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+.user-links a, .user-links button{
+    background:var(--secondary);
+    width:2rem;
+    height:2rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    cursor:pointer;
+}
+.basket-counter{
+    background:var(--wild);
+    color:var(--primary);
+    font-weight:600;
+    padding:0rem 0.3rem;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;   
+    position:absolute;
+    bottom:-0.2rem;
+    right:-0.5rem;
+
+}
