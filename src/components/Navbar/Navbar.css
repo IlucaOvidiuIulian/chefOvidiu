@@ -9,29 +9,33 @@ nav {
     width:100%;
     padding:0.5rem 1rem;
     position:absolute;
-    top:0;
     left:0;
     right:0;
+    top:0;
 }
-
-
+nav a.active{
+    color:var(--wild);
+}
 .nav-wrapper{
     display:flex;
-    justify-content:space-between;
     align-items:center;
     max-width:47rem;
-    padding: 0 1rem;
+  
     margin:0 auto;
 }
+
 .nav-links{
     display:flex;
     justify-content:center;
     align-items:center;
     gap:1rem;
+    margin-right:auto;
 }
+
 .nav-links a:hover{
     color:var(--wild);
 }
+
 .user-links{
     display:flex;
     gap: 0.5rem;
@@ -39,6 +43,7 @@ nav {
     align-items:center;
     position:relative;
 }
+
 .user-links a, .user-links button{
     background:var(--secondary);
     width:2rem;
@@ -49,6 +54,7 @@ nav {
     border-radius:50%;
     cursor:pointer;
 }
+
 .basket-counter{
     background:var(--wild);
     color:var(--primary);
@@ -61,5 +67,4 @@ nav {
     position:absolute;
     bottom:-0.2rem;
     right:-0.5rem;
-
 }

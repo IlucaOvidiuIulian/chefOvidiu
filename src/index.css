@@ -1,3 +1,5 @@
+body::-webkit-scrollbar{display:none;}
+
 :root {
     --primary: #5c2731;
     --secondary: #ead3c1;
@@ -13,7 +15,6 @@
     font-size:26px;
     text-decoration:none;
     user-select:none;
-
 }
 body{
     background-image: url("./assets/others/wooden-background.jpg");
@@ -24,4 +25,7 @@ body{
     min-width:100vw;
     position:relative;
 }
-body::-webkit-scrollbar{display:none;}
+#root{
+    max-width:60rem;
+    margin:0 auto;
+}

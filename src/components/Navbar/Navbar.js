@@ -3,25 +3,26 @@ import "./Navbar.css";
 import { ReactComponent as UserLogo } from "../../assets/others/person-fill.svg";
 import { ReactComponent as UserBasket } from "../../assets/others/basket-fill.svg";
 import Logo from "../Logo/Logo";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <nav>
       <div className="nav-wrapper">
         <div className="nav-links">
-          <a href="#">
+          <NavLink to="/">
             <Logo width={96} />
-          </a>
-          <a href="#">Acasa</a>
-          <a href="#">Meniu</a>
-          <a href="#">Despre</a>
-          <a href="#">Contact</a>
+          </NavLink>
+          <NavLink to="/">Acasa</NavLink>
+          <NavLink to="/meniu">Meniu</NavLink>
+          <NavLink to="/despre">Despre</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </div>
         <div className="user-links">
           <h3>Ovidiu!</h3>
-          <a href="_blank">
+          <NavLink>
             <UserLogo />
-          </a>
+          </NavLink>
           <button>
             <UserBasket />
           </button>

@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-design-box">
-        <Logo width="100" />
+        <Logo width="150" />
       </div>
       <div className="footer-wrapper">
         <div className="footer-links">
