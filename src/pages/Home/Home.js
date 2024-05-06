@@ -7,8 +7,8 @@ import img3 from "../../assets/hero/carousel-image-3.jpg";
 const carouselImages = [img1, img2, img3];
 export default function Home() {
   return (
-    <div>
+    <>
       <Carousel imageUrls={carouselImages} />
-    </div>
+    </>
   );
 }

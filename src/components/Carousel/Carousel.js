@@ -1,7 +1,6 @@
 // Carousel.js
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Carousel.css";
-import { ReactComponent as SliderBtn } from "../../assets/others/minus-svgrepo-com.svg";
 
 export default function Carousel({ imageUrls }) {
   const [imageIndex, setImageIndex] = useState(0);
@@ -17,6 +16,15 @@ export default function Carousel({ imageUrls }) {
       return index - 1;
     });
   };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setImageIndex((index) =>
+        index === imageUrls.length - 1 ? 0 : index + 1
+      );
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [imageUrls.length]);
+
   return (
     <div className="carousel">
       <div className="carousel-inner">
@@ -31,21 +39,27 @@ export default function Carousel({ imageUrls }) {
           );
         })}
       </div>
-      <button className="img-slider-btn" style={{ left: 0 }} onClick={showPrev}>
-        ..
-      </button>
+      <button
+        className="img-slider-btn"
+        style={{ left: 0 }}
+        onClick={showPrev}
+      ></button>
       <button
         className="img-slider-btn"
         style={{ right: 0 }}
         onClick={showNext}
-      >
-        ..
-      </button>
+      ></button>
       <div className="slider-btns">
         {imageUrls.map((_, index) => {
           return (
-            <button key={index} onClick={() => setImageIndex(index)}>
-              <SliderBtn />
+            <button
+              key={index}
+              onClick={() => setImageIndex(index)}
+              style={{
+                color: index === imageIndex ? "var(--wild)" : "var(--primary)",
+              }}
+            >
+              -
             </button>
           );
         })}

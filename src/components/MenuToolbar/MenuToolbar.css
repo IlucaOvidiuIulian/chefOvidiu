@@ -1,0 +1,10 @@
+.menu-toolbar{
+position:fixed;
+left:0;
+right:0;
+background: var(--secondary);
+color:var(--primary);
+display:absolute;
+align-items:center;
+justify-content:center;
+}

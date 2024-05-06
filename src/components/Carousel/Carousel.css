@@ -36,9 +36,20 @@
 }
 .slider-btns{
     position:absolute;
-    bottom:0.5rem;
+    bottom:-1rem;
     left:50%;
     display:flex;
-    gap:0.25rem;
-    transform:translate(-50%)
+    transform:translate(-50%);
+   
+}
+.slider-btns button {
+    background: transparent;
+    cursor: pointer;
+    font-weight: 400;
+    font-size:5rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+   
 }

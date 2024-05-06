@@ -7,7 +7,7 @@ footer {
     justify-content:center;
     width:100vw;
     min-width:100vw;
-    height:fit-content;
+  
     position:absolute;
     bottom:0;
     left:0;
@@ -36,7 +36,9 @@ footer {
   
     display:flex;
     gap:5rem;
-    width: 46rem;
+    min-width:46rem;
+    max-width:100vw;
+   
 }
 .footer-links{
     display:flex;
