@@ -4,6 +4,7 @@ body::-webkit-scrollbar{display:none;}
     --primary: #5c2731;
     --secondary: #ead3c1;
     --wild: #f9f871;
+    --dark: #000;
 }
 *{
     font-family:"Sansita";

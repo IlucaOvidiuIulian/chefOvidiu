@@ -8,7 +8,17 @@ export default function Meniu() {
     isPending,
   } = useFetch("http://localhost:4000/products");
 
-  const categories = [];
+  const categories = [
+    "Pizza",
+    "Paste",
+    "Burgeri",
+    "Ciorbe",
+    "Preparate",
+    "Garnituri",
+    "Mic dejun",
+    "Bauturi",
+    "Deserturi",
+  ];
 
   return (
     <div className="menu-container">

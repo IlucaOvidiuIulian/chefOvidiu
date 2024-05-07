@@ -1,10 +1,22 @@
 .menu-toolbar{
-position:fixed;
+position:absolute;
 left:0;
 right:0;
 background: var(--secondary);
-color:var(--primary);
 display:absolute;
 align-items:center;
 justify-content:center;
 }
+.toolbar-wrapper{
+    max-width:47rem;
+    margin:0 auto;
+    padding:0.5rem 1rem;
+    
+}
+.toolbar-wrapper>button{
+    color:var(--dark);
+    font-weight:600;
+    background:transparent;
+    margin-right:1rem;
+    cursor:pointer;
+};
