@@ -4,7 +4,11 @@ export default function MenuToolbar({ categories }) {
     <div className="menu-toolbar">
       <div className="toolbar-wrapper">
         {categories.map((category, i) => {
-          return <button className="category-selector">{category}</button>;
+          return (
+            <button key={i} className="category-selector">
+              {category}
+            </button>
+          );
         })}
       </div>
     </div>
