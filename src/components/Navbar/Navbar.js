@@ -4,8 +4,11 @@ import { ReactComponent as UserLogo } from "../../assets/others/person-fill.svg"
 import { ReactComponent as UserBasket } from "../../assets/others/basket-fill.svg";
 import Logo from "../Logo/Logo";
 import { NavLink } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext";
 
 export default function Navbar() {
+  const { authUser, isLoggedIn } = useAuth();
+
   return (
     <nav>
       <div className="nav-wrapper">
@@ -19,10 +22,17 @@ export default function Navbar() {
           <NavLink to="/contact">Contact</NavLink>
         </div>
         <div className="user-links">
-          <h3>Ovidiu!</h3>
-          <NavLink>
-            <UserLogo />
-          </NavLink>
+          {authUser ? (
+            <>
+              <h3>{authUser.username}</h3>
+              <NavLink>
+                <UserLogo />
+              </NavLink>
+            </>
+          ) : (
+            <></>
+          )}
+
           <button>
             <UserBasket />
           </button>
