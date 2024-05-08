@@ -3,7 +3,7 @@
     left:0;
     right:0;
     background: var(--secondary);
-    display:absolute;
+    display:flex;
     align-items:center;
     justify-content:center;
 }
@@ -13,10 +13,16 @@
     padding:0.5rem 1rem;
     
 }
-.toolbar-wrapper button{
+.category-selector{
     color:var(--dark);
     font-weight:600;
-    background:transparent;
+    background:var(--secondary);
     margin-right:1rem;
     cursor:pointer;
-};
+}
+
+.category-selector:hover {
+   color: var(--wild);
+  }
+  
+
