@@ -1,0 +1,75 @@
+.auth-layout{
+    display:flex;
+    justify-content:space-between;
+    margin:1rem auto;
+    padding:1rem 3rem;
+    background-color:var(--primary);
+    width:80%;
+    align-items:center;
+}
+.auth-form{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap: 1rem;
+}
+.auth-layout form{
+    display:flex;
+    flex-direction:column;
+    gap:0.6rem;
+}
+.auth-layout input{
+    background-color:var(--secondary);
+    border-radius:0.2rem;
+    width:90%;
+    color:var(--primary);
+    outline:none;
+    padding:0.2rem 0.5rem;
+}
+.auth-layout h2{
+    color:var(--wild);
+    font-size:2rem;
+    margin-bottom:0.5rem;
+}
+.auth-layout a:not(.login-facebook){
+    display:inline-block;
+    margin-right:0.5rem;
+    color:var(--wild);
+    font-size:0.7rem;
+}
+.auth-layout button{
+    background:var(--wild);
+    color:var(--primary);
+    font-size:0.7rem;
+    padding:0.2rem 0.7rem;
+    border-radius:0.5rem;
+    cursor:pointer;
+   
+}
+.auth-layout button:hover{background:#fff;}
+.auth-layout a:hover{
+    color:#fff;
+}
+.auto-login{
+    display:flex;
+    gap:1rem;
+}
+.auto-login svg{
+    max-height:2rem;
+}
+.login-facebook{
+    background-color:#3B5998;
+}
+.login-google{
+    background-color:var(--secondary);
+}
+.login-facebook, .login-google{
+    padding:0.8rem;
+    width:30%;
+    height:1rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer
+}

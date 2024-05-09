@@ -6,17 +6,23 @@ import {
 } from "react-router-dom";
 
 // pages
+
 import Home from "./pages/Home/Home";
 import Meniu from "./pages/Meniu/Meniu";
 import Contact from "./pages/Contact/Contact";
-
-// layouts
-import RootLayout from "./Layouts/RootLayout/RootLayout";
-// import useFetch from "./hooks/useFetch";
-import { ProductProvider } from "./contexts/ProductContext";
-import { AuthProvider } from "./contexts/AuthContext";
+import Despre from "./pages/Despre/Despre";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
+
+// layouts
+
+import RootLayout from "./Layouts/RootLayout/RootLayout";
+import AuthLayout from "./Layouts/AuthLayout/AuthLayout";
+
+// contexts
+
+import { ProductProvider } from "./contexts/ProductContext";
+import { AuthProvider } from "./contexts/AuthContext";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,18 +30,15 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="meniu" element={<Meniu />} />
       <Route path="contact" element={<Contact />} />
-      <Route path="login" element={<Login />} />
-      <Route path="register" element={<Register />} />
+      <Route path="despre" element={<Despre />} />
+      <Route path="auth" element={<AuthLayout />}>
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
+      </Route>
     </Route>
   )
 );
 export default function App() {
-  // const {
-  //   data: products,
-  //   error,
-  //   isPending,
-  // } = useFetch("http://localhost:4000/products");
-
   return (
     <AuthProvider>
       <ProductProvider>

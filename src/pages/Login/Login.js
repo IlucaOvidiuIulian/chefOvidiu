@@ -1,7 +1,7 @@
 import React from "react";
 import { useAuth } from "../../contexts/AuthContext";
 import { useState } from "react";
-
+import "./Login.css";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -64,7 +64,7 @@ const Login = () => {
         placeholder="Introdu emailul"
         required
       />
-      <br />
+
       <input
         type="password"
         name="password"
@@ -72,12 +72,11 @@ const Login = () => {
         placeholder="Introdu parola"
         required
       />
-      <br />
-      <Link to="/auth/forgotPassword">Am uitat parola!</Link>
-      <Link to="/auth/register">Am uitat parola!</Link>
-      <button>Nu am cont!</button>
-      <br></br>
-      <button type="submit">Conecteaza-te</button>
+      <div className="form-actions">
+        <Link to="/auth/forgotPassword">Am uitat parola!</Link>
+        <Link to="/auth/register">Nu am cont!</Link>
+        <button type="submit">Conecteaza-te</button>
+      </div>
     </form>
   );
 };

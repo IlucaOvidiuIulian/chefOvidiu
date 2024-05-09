@@ -1,6 +1,7 @@
 import React from "react";
 import { useAuth } from "../../contexts/AuthContext";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 class UserRegisterRequest {
   constructor(username, email, password) {
@@ -84,14 +85,29 @@ const Register = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h3> Username: </h3>
-      <input type="text" name="username" onChange={handleChange} />
-      <h3> Email: </h3>
-      <input type="email" name="email" onChange={handleChange} />
-      <h3> Password: </h3>
-      <input type="password" name="password" onChange={handleChange} />
-      <button> Am deja cont </button>
-      <button type="submit">Înregistrează-te</button>
+      <h2>Inregistreaza-te</h2>
+      <input
+        type="text"
+        name="username"
+        onChange={handleChange}
+        placeholder="Introdu numele"
+      />
+      <input
+        type="email"
+        name="email"
+        onChange={handleChange}
+        placeholder="Introdu email"
+      />
+      <input
+        type="password"
+        name="password"
+        onChange={handleChange}
+        placeholder="Introdu parola"
+      />
+      <div className="form-actions">
+        <Link to="/auth/login"> Am deja cont </Link>
+        <button type="submit">Înregistrează-te</button>
+      </div>
     </form>
   );
 };

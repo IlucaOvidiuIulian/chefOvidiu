@@ -1,4 +1,3 @@
-
 *{
     user-select:none;
 }
@@ -41,7 +40,7 @@ nav a.active{
     position:relative;
 }
 
-.user-links a, .user-links button{
+.user-links a:not(.login-nav-link), .user-links button{
     background:var(--secondary);
     width:2rem;
     height:2rem;
@@ -50,6 +49,10 @@ nav a.active{
     align-items:center;
     border-radius:50%;
     cursor:pointer;
+}
+
+.user-links h3{
+    text-transform:capitalize;
 }
 
 .basket-counter{

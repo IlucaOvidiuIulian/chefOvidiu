@@ -22,7 +22,7 @@ export default function Navbar() {
           <NavLink to="/contact">Contact</NavLink>
         </div>
         <div className="user-links">
-          {authUser ? (
+          {isLoggedIn ? (
             <>
               <h3>{authUser.username}</h3>
               <NavLink>
@@ -30,7 +30,11 @@ export default function Navbar() {
               </NavLink>
             </>
           ) : (
-            <></>
+            <>
+              <NavLink className="login-nav-link" to="/login">
+                Conecteaza-te
+              </NavLink>
+            </>
           )}
 
           <button>

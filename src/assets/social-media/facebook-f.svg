@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119 119" width="1rem" height="1rem">
+    <g class="icon_image" transform="translate(5,5)">
+        <g class="navy_blue_background">
+            <rect fill="#3B5998" x="0" y="0" height="20px" width="20px" rx="11" ry="11"></rect>
+        </g>
+        <g class="f_foreground">
+            <path fill="#FFFFFF" d="M62,119 L62,73 L47,73 L47,54 L62,54 L62,40 A21,23 0 0 1 81,17 L101,17 L101,35 L89,35 A7.5,6.5 0 0 0 82,42 L82,54 L100,54 L98,73 L82,73 L82,119 z"></path>
+        </g>
+    </g>
+</svg>
