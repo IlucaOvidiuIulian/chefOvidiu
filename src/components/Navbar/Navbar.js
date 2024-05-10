@@ -31,7 +31,7 @@ export default function Navbar() {
             </>
           ) : (
             <>
-              <NavLink className="login-nav-link" to="/login">
+              <NavLink className="login-nav-link" to="/auth/login">
                 Conecteaza-te
               </NavLink>
             </>

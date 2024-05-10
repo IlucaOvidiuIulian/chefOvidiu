@@ -38,6 +38,7 @@ const router = createBrowserRouter(
     </Route>
   )
 );
+
 export default function App() {
   return (
     <AuthProvider>

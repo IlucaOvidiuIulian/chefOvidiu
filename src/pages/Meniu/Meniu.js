@@ -1,6 +1,8 @@
 import { useContext } from "react";
+import "./Meniu.css";
 import MenuToolbar from "../../components/MenuToolbar/MenuToolbar";
 import { ProductContext } from "../../contexts/ProductContext";
+import MenuList from "../../components/MenuList/MenuList";
 export default function Meniu() {
   const categories = [
     "Pizza",
@@ -13,11 +15,13 @@ export default function Meniu() {
     "Bauturi",
     "Deserturi",
   ];
-  const products = useContext(ProductContext);
-  console.log(products);
+
+  let products = useContext(ProductContext);
+
   return (
     <div className="menu-container">
-      <MenuToolbar categories={categories} />;
+      <MenuToolbar categories={categories} />
+      <MenuList products={products} />
     </div>
   );
 }

@@ -15,62 +15,8 @@
         "CVC": "cardNumber"
       },
       "location": []
-    },
-    {
-      "id": "49f7",
-      "username": "tata",
-      "email": "tata@gmail.com",
-      "password": "tata",
-      "permission": "client",
-      "basket": [],
-      "orders": [],
-      "cards": [],
-      "locations": []
-    },
-    {
-      "id": "577f",
-      "username": "Alex",
-      "email": "alex@gmail.com",
-      "password": "alex",
-      "permission": "client",
-      "basket": [],
-      "orders": [],
-      "cards": [],
-      "locations": []
-    },
-    {
-      "id": "a5f9",
-      "username": "Mama",
-      "email": "mama@gmai.com",
-      "password": "mama",
-      "permission": "client",
-      "basket": [],
-      "orders": [],
-      "cards": [],
-      "locations": []
-    },
-    {
-      "id": "1297",
-      "username": "frate",
-      "email": "frate@gmail.com",
-      "password": "frate",
-      "permission": "client",
-      "basket": [],
-      "orders": [],
-      "cards": [],
-      "locations": []
-    },
-    {
-      "id": "d6b5",
-      "username": "ss",
-      "email": "fraste@gmail.com",
-      "password": "frate",
-      "permission": "client",
-      "basket": [],
-      "orders": [],
-      "cards": [],
-      "locations": []
     }
+   
   ],
   "orders": [
     {
@@ -87,158 +33,181 @@
       "title": "Pizza Quattro Carni",
       "category": "Pizza",
       "price": 41.9,
-      "description": "blat pizza, mix branzeturi (mozzarella, cascaval), sos de rosii dulce, bacon, salam demisec, piept pui, sunca de porc, salam vara - 900g / 1250g Alergeni: gluten, lactoza, telina, soia, mustar",
+      "description": "blat pizza, mix branzeturi (mozzarella, cascaval), sos de rosii dulce, bacon, salam demisec, piept pui, sunca de porc, salam vara - 900g / 1250g ",
       "date": "12.03.1999",
       "promotion": true,
       "promotion-price": "35",
-      "availability": true
+      "availability": true,
+      "alergeni":"gluten, lactoza, telina, soia, mustar"
+      
     },
     {
       "id": "3",
       "title": "Pizza Capricioasa",
       "category": "Pizza",
       "price": 41.9,
-      "description": "blat pizza, mix branzeturi (mozzarella, cascaval), sos de rosii dulce, sunca de porc, salam de vara, ciuperci - 700g / 1000g Alergeni: gluten, lactoza, soia, telina"
+      "description": "blat pizza, mix branzeturi (mozzarella, cascaval), sos de rosii dulce, sunca de porc, salam de vara, ciuperci - 700g / 1000g",
+      "alergeni":"gluten, lactoza, soia, telina"
     },
     {
       "id": "4",
       "title": "Pizza Ovidiu",
       "category": "Pizza",
       "price": 48.9,
-      "description": "blat pizza, mix branzeturi (mozzarella, cascaval), sos de rosii dulce, salam de cerb, ceapa verde, ciuperci, ulei vegetal de masline aromatizat cu trufe, mix de ulei(masline, floarea soarelui) - 750g / 1100g Alergeni: gluten, lactoza, mustar"
+      "description": "blat pizza, mix branzeturi (mozzarella, cascaval), sos de rosii dulce, salam de cerb, ceapa verde, ciuperci, ulei vegetal de masline aromatizat cu trufe, mix de ulei(masline, floarea soarelui) - 750g / 1100g",
+      "alergeni":"gluten, lactoza, mustar"
     },
     {
       "id": "5",
       "title": "Pizza Quattro Stagioni",
       "category": "Pizza",
       "price": 44.9,
-      "description": "blat pizza, mix branzeturi (mozzarella, cascaval), sos de rosii dulce, sunca de porc, salam vara, ardei gras, ciuperci - 700g / 1050g Alergeni: gluten, lactoza, soia, telina"
+      "description": "blat pizza, mix branzeturi (mozzarella, cascaval), sos de rosii dulce, sunca de porc, salam vara, ardei gras, ciuperci - 700g / 1050g ",
+      "alergeni":"gluten, lactoza, soia, telina"
     },
     {
       "id": "7",
       "title": "Pizza Mexicana",
       "category": "Pizza",
       "price": 53.4,
-      "description": "blat pizza, mix branzeturi (mozzarella, cascaval), sos de rosii dulce, branza brie, fasole, mix de branza tare (parmiggiano, grana padano) nachos - 700g / 1000g Alergeni: lactoza, gluten, ou"
+      "description": "blat pizza, mix branzeturi (mozzarella, cascaval), sos de rosii dulce, branza brie, fasole, mix de branza tare (parmiggiano, grana padano) nachos - 700g / 1000g",
+      "alergeni":"gluten, lactoza, ou"
     },
     {
       "id": "8",
       "title": "Pizza Pollo",
       "category": "Pizza",
       "price": 34.9,
-      "description": "blat pizza, mix branzeturi mammamia (mozzarella, cascaval), piept pui, sos de rosii dulce, rosii bruschette, masline kalamata - 750g / 1050g Alergeni: gluten, lactoza, mustar"
+      "description": "blat pizza, mix branzeturi mammamia (mozzarella, cascaval), piept pui, sos de rosii dulce, rosii bruschette, masline kalamata - 750g / 1050g",
+      "alergeni":"gluten, lactoza, mustar"
     },
     {
       "id": "9",
       "title": "Spaghetti Carbonara",
       "category": "Paste",
       "price": 37.9,
-      "description": "spaghette, smantana, bacon, mix de ulei (masline, floarea soarelui), mix de branza tare (parmiggiano, grana padano), sare, piper - 400g Alergeni: gluten, lactoza, ou"
+      "description": "spaghette, smantana, bacon, mix de ulei (masline, floarea soarelui), mix de branza tare (parmiggiano, grana padano), sare, piper - 400g",
+      "alergeni":"gluten, lactoza, ou"
     },
     {
       "id": "10",
       "title": "Spaghetti Bolognese",
       "category": "Paste",
       "price": 35.9,
-      "description": "spaghette, sos bolognese (sos de rosii dulce, carne tocata (carne porc, carne vita) ceapa, morcov, telina, pasta de tomate), sos napoli, mix de branza tare (parmiggiano, grana padano) - 400g Alergeni: gluten, telina, lactoza, ou"
+      "description": "spaghette, sos bolognese (sos de rosii dulce, carne tocata (carne porc, carne vita) ceapa, morcov, telina, pasta de tomate), sos napoli, mix de branza tare (parmiggiano, grana padano) - 400g",
+      "alergeni":"gluten, lactoza, telina, ou"
     },
     {
       "id": "11",
       "title": "Penne Arabicate",
       "category": "Paste",
       "price": 32.9,
-      "description": "PICANT - penne, sos napoli, bacon, sunca de pui, supa de legume, mix de ulei (masline, floarea soarelui), mix de branza tare (parmiggiano, grana padano), ardei iute, sare, piper - 400g Alergeni: gluten, soia, telina, lactoza, ou"
+      "description": "PICANT - penne, sos napoli, bacon, sunca de pui, supa de legume, mix de ulei (masline, floarea soarelui), mix de branza tare (parmiggiano, grana padano), ardei iute, sare, piper - 400g ",
+      "alergeni": "gluten, soia, telina, lactoza, ou"
     },
     {
       "id": "12",
       "title": "Penne cu Creveti",
       "category": "Paste",
       "price": 47.9,
-      "description": "penne, creveti, sos napoli, smantana, supa de legume, unt, mix de branza tare (parmiggiano, grana padano), vin alb, patrunjel, sare, piper - 400g Alergeni: crustacee, lactoza, gluten, ou, telina, sulfiti"
+      "description": "penne, creveti, sos napoli, smantana, supa de legume, unt, mix de branza tare (parmiggiano, grana padano), vin alb, patrunjel, sare, piper - 400g ",
+      "alergeni": "crustacee, lactoza, gluten, ou, telina, sulfiti"
     },
     {
       "id": "14",
       "title": "Burger",
       "category": "Burgeri",
       "price": 35.9,
-      "description": "chifla burger de casa, carne de vita, sos burger, castraveti in otet, branza gouda, mix salata, bacon - 350g Alergeni: gluten, lactoza, ou, mustar, susan"
+      "description": "chifla burger de casa, carne de vita, sos burger, castraveti in otet, branza gouda, mix salata, bacon - 350g ",
+      "alergeni": "gluten, lactoza, ou, mustar, susan"
     },
     {
       "id": "15",
       "title": "Crispyburger",
       "category": "Burgeri",
       "price": 33.9,
-      "description": "chifla burger de casa, piept de pui crispy (piept de pui marinat picant, ulei vegetal de floarea soarelui, faina alba de grau, ou), sos cocktail, salata de varza cu patrunjel, castraveti in otet - 360g Alergeni: gluten, lactoza, ou, mustar, susan"
+      "description": "chifla burger de casa, piept de pui crispy (piept de pui marinat picant, ulei vegetal de floarea soarelui, faina alba de grau, ou), sos cocktail, salata de varza cu patrunjel, castraveti in otet - 360g ",
+      "alergeni": "gluten, lactoza, ou, mustar, susan"
     },
     {
       "id": "16",
       "title": "Ciorba de vacuta",
       "category": "Ciorbe",
       "price": 24.9,
-      "description": "cartofi, carne vita, rosii, amestec legume (morcov, gulii, pastai, mazare), ardei gras, ceapa, telina, supa vita, bors, apa, ulei vegetal de floarea-soarelui, patrunjel si leustean verde - 380g Alergeni: gluten, telina"
+      "description": "cartofi, carne vita, rosii, amestec legume (morcov, gulii, pastai, mazare), ardei gras, ceapa, telina, supa vita, bors, apa, ulei vegetal de floarea-soarelui, patrunjel si leustean verde - 380g ",
+      "alergeni": "gluten, telina"
     },
     {
       "id": "17",
       "title": "Ciorba radauteana",
       "category": "Ciorbe",
       "price": 24.9,
-      "description": "supa de pasare (carne de pui, ceapa, telina, morcov), piept de pui, smantana, galbenua de ou, zeama de lamaie, ulei vegetal de floarea-soarelui, sare - 380g Alergeni: telina, ou, lactoza"
+      "description": "supa de pasare (carne de pui, ceapa, telina, morcov), piept de pui, smantana, galbenua de ou, zeama de lamaie, ulei vegetal de floarea-soarelui, sare - 380g ",
+      "alergeni": "telina, ou, lactoza"
     },
     {
       "id": "18",
       "title": "Supa crema de legume",
       "category": "Ciorbe",
       "price": 23.9,
-      "description": "supa de legume (morcov, ceapa, telina), cartofi, morcovi, ceapa, smantana, ardei gras, pastarnac, telina, unt, sare / crutoane - 380g / 50g Alergeni: telina, gluten, lactoza"
+      "description": "supa de legume (morcov, ceapa, telina), cartofi, morcovi, ceapa, smantana, ardei gras, pastarnac, telina, unt, sare / crutoane - 380g / 50g ",
+      "alergeni": "telina, gluten, lactoza"
     },
     {
       "id": "19",
       "title": "Ciorba de legume",
       "category": "Ciorbe",
       "price": 18.9,
-      "description": "cartofi, rosii, sfecla roșie, amestec legume (morcov, gulii, pastai, mazare), ceapa, telina, apa, bors, patrunjel si leustean verde, ulei vegetal de floarea-soarelui, sare - 380g Alergeni: gluten, telina"
+      "description": "cartofi, rosii, sfecla roșie, amestec legume (morcov, gulii, pastai, mazare), ceapa, telina, apa, bors, patrunjel si leustean verde, ulei vegetal de floarea-soarelui, sare - 380g ",
+      "alergeni": "gluten, telina"
     },
     {
       "id": "20",
       "title": "Chiftelute de Pui",
       "category": "Preparate",
       "price": 17.9,
-      "description": "piept de pui cartofi, ceapa, morcov, ou uht patrunjel, pesmet, usturoi, ulei vegetal de floarea soarelui, sare, piper - 200g Alergeni: ou, glutena"
+      "description": "piept de pui cartofi, ceapa, morcov, ou uht patrunjel, pesmet, usturoi, ulei vegetal de floarea soarelui, sare, piper - 200g ",
+      "alergeni": "ou, gluten"
     },
     {
       "id": "21",
       "title": "Tochitura Moldoveneasca",
       "category": "Preparate",
       "price": 48.9,
-      "description": "tochitura (spata de porc, piept de porc, carnati semiafumati, cimbru, untura, vin alb, usturoi, supa de legume, mujdei, sare, piper), ou, ulei vegetal de floarea soarelui, branza burduf, mamaliguta - 550g Alergeni: lactoza, ou, telina, sulfiti, soia"
+      "description": "tochitura (spata de porc, piept de porc, carnati semiafumati, cimbru, untura, vin alb, usturoi, supa de legume, mujdei, sare, piper), ou, ulei vegetal de floarea soarelui, branza burduf, mamaliguta - 550g ",
+      "alergeni": "lactoza, ou, telina, sulfiti, soia"
     },
     {
       "id": "23",
       "title": "Cotlet la gratar",
       "category": "Preparate",
       "price": 29.9,
-      "description": "cotlet de porc, condimente (paprika afumata, mustar pudra, sare, piper, usturoi), ulei vegetal de floarea soarelui - 200g Alergeni: mustar"
+      "description": "cotlet de porc, condimente (paprika afumata, mustar pudra, sare, piper, usturoi), ulei vegetal de floarea soarelui - 200g ",
+      "alergeni": "mustar"
     },
     {
       "id": "26",
       "title": "Piure de cartofi",
       "category": "Garnituri",
       "price": 12.9,
-      "description": "cartofi fulgi, unt, apa - 200g Alergeni: lactoza"
+      "description": "cartofi fulgi, unt, apa - 200g",
+      "alergeni": "lactoza"
     },
     {
       "id": "27",
       "title": "Salata coleslaw",
       "category": "Garnituri",
       "price": 12.9,
-      "description": "varză alba, varza rosie, sos maioneza, morcov, ceapa, otet, zahar, sare - 150g Alergeni: ou, mustar, lactoza"
+      "description": "varză alba, varza rosie, sos maioneza, morcov, ceapa, otet, zahar, sare - 150g ",
+       "alergeni": "ou, mustar, lactoza"
     },
     {
       "id": "29",
       "title": "Sos Tzatziki",
       "category": "Garnituri",
       "price": 6.5,
-      "description": "LACTO-VEGETARIANA - castraveti verzi, usturoi, iaurt, marar - 100g Alergeni: lactoza"
+      "description": "LACTO-VEGETARIANA - castraveti verzi, usturoi, iaurt, marar - 100g",
+      "alergeni": "lactoza"
     },
     {
       "id": "30",
@@ -259,21 +228,24 @@
       "title": "Ochiuri",
       "category": "Mic dejun",
       "price": 13.9,
-      "description": "oua, ulei vegetal de floarea soarelui - 100g Alergeni: ou"
+      "description": "oua, ulei vegetal de floarea soarelui - 100g ",
+      "alergeni": "ou"
     },
     {
       "id": "34",
       "title": "Omleta",
       "category": "Mic dejun",
       "price": 16.9,
-      "description": "oua, ulei vegetal de floarea soarelui - 100g Alergeni: ou"
+      "description": "oua, ulei vegetal de floarea soarelui - 100g",
+      "alergeni": "ou"
     },
     {
       "id": "35",
       "title": "Cascaval pane",
       "category": "Mic dejun",
       "price": 24,
-      "description": "cascaval, ou, pesmet, faina alba de grau, ulei vegetal de floarea soarelui - 150g Alergeni: ou, lactoză, gluten"
+      "description": "cascaval, ou, pesmet, faina alba de grau, ulei vegetal de floarea soarelui - 150g",
+      "alergeni": "ou, lactoză, gluten"
     },
     {
       "id": "36",
@@ -315,14 +287,16 @@
       "title": "Tiramisu",
       "category": "Deserturi",
       "price": 16.9,
-      "description": "mascarpone, ou, crema vegetala, zahar, piscoturi, amaretto, cafea, cacao - 120g Alergeni: gluten, lactoza, soia, ou"
+      "description": "mascarpone, ou, crema vegetala, zahar, piscoturi, amaretto, cafea, cacao - 120g ",
+      "alergeni": "gluten, lactoza, soia, ou"
     },
     {
       "id": "42",
       "title": "Savarina",
       "category": "Deserturi",
       "price": 11.9,
-      "description": "coji savarina (zahar, faina alba din grau, ulei vegetal de floarea soarelui, ou, drojdie, arome (lămâie, rom, vanilie)), crema vegetala, iaurt, smantana, glazura capsuni, zahar pudra, zahar vanilat - 210g Alergeni: gluten, lactoza, soia, ou"
+      "description": "coji savarina (zahar, faina alba din grau, ulei vegetal de floarea soarelui, ou, drojdie, arome (lămâie, rom, vanilie)), crema vegetala, iaurt, smantana, glazura capsuni, zahar pudra, zahar vanilat - 210g",
+      "alergeni": "gluten, lactoza, soia, ou"
     }
   ]
 }
