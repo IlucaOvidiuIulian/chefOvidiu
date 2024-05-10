@@ -32,6 +32,20 @@
       "orders": [],
       "cards": [],
       "locations": []
+    },
+    {
+      "id": "9dc5",
+      "username": "ovidiu",
+      "email": "ovidiu@gmail.com",
+      "password": "ovidiu",
+      "permission": "client",
+      "basket": [
+        "2",
+        "3"
+      ],
+      "orders": [],
+      "cards": [],
+      "locations": []
     }
   ],
   "products": [

@@ -13,6 +13,9 @@ export function BasketProvider(props) {
   const { authUser, isLoggedIn } = useAuth();
 
   const addProductToBasket = (product) => {
+    console.log(
+      `Adding product with id ${product} and the name ${product} to basket`
+    );
     setBasketProducts([...basketProducts, product]);
     if (isLoggedIn) {
       updateBasketToDatabase(basketProducts, authUser);
@@ -30,6 +33,10 @@ export function BasketProvider(props) {
     } else {
       localStorage.setItem("BASKET", JSON.stringify(basketProducts));
     }
+  };
+  const removeAllProductsFromBasket = () => {
+    setBasketProducts([]);
+    localStorage.setItem("BASKET", []);
   };
 
   const getNumberOfProducts = () => {
@@ -62,6 +69,7 @@ export function BasketProvider(props) {
     addProductToBasket,
     removeProductFromBasket,
     getNumberOfProducts,
+    removeAllProductsFromBasket,
   };
 
   return (
@@ -73,7 +81,7 @@ export function BasketProvider(props) {
 
 function updateBasketToDatabase(newBasket, authUser) {
   fetch(`http://localhost:4000/users/${authUser.id}`, {
-    method: "PUT",
+    method: "PATCH",
     headers: {
       "Content-Type": "application.json",
     },

@@ -5,7 +5,7 @@ import Logo from "../../components/Logo/Logo";
 import { useBasket } from "../../contexts/BasketContext";
 export default function Basket() {
   const [showOrderForm, setShowOrderForm] = useState(false);
-
+  const { basketProducts, removeAllProductsFromBasket } = useBasket();
   const handleOrderForm = () => {
     setShowOrderForm(true);
   };
@@ -13,13 +13,17 @@ export default function Basket() {
     <>
       <div className="basket">
         <div className="basket-products">
-          <BasketProduct />
+          {basketProducts?.map((basketProduct) => {
+            return <BasketProduct product={basketProduct} />;
+          })}
         </div>
 
         <div className="basket-summary">
           <span>TOTAL:</span>
           <div className="basket-actions">
-            <button>STERGE TOATA COMANDA</button>
+            <button onClick={removeAllProductsFromBasket}>
+              STERGE TOATA COMANDA
+            </button>
             <button onClick={handleOrderForm}>FINALIZEAZA COMANDA</button>
           </div>
         </div>

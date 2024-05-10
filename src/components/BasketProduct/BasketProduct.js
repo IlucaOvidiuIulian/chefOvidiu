@@ -1,6 +1,7 @@
 import React from "react";
 import "./BasketProduct.css";
-export default function BasketProduct() {
+export default function BasketProduct({ product }) {
+  console.log(product);
   return (
     <div className="basket-product">
       <div>
