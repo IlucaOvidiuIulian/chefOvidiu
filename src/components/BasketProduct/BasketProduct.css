@@ -1,0 +1,40 @@
+.basket-product{
+    width:100%;
+    padding:0.2rem 1rem;
+    border-radius:5px;
+    background-color:var(--secondary);
+    display:flex;
+    gap:1rem;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:0.5rem;
+}
+.product-quantifier button{
+    background:var(--primary);
+    padding:0 0.5rem 0.3rem 0.5rem;
+    height:1rem;
+    width:1rem;
+    display:flex;
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+    border-radius:5px;
+    cursor:pointer;
+}
+.product-quantifier button:active{
+    transform:translateY(2px);
+}
+.basket-product span {
+    color:var(--primary);
+    display:inline;
+    margin:0 0.5rem;
+}
+.product-quantifier{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.basket-prod-quantity{
+    padding-bottom:0.2rem;
+
+}

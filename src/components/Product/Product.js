@@ -1,4 +1,6 @@
 import React from "react";
+import ImageHelper from "../../helpers/ImageHelper";
+import "./Product.css";
 
 export default function Product({ product }) {
   const {
@@ -11,17 +13,22 @@ export default function Product({ product }) {
     promotionPrice,
     availability,
     alergeni,
-    b,
   } = product;
+  const promotionPrice1 = parseFloat(product["promotion-price"]);
   return (
     <div className="product-box">
-      <div className="product-image"></div>
+      <div className="product-image">
+        <ImageHelper product={product} />
+      </div>
       <div className="product-details">
         <h1>{title}</h1>
         <p>{description}</p>
-      </div>
-      <div>
-        <p>{price} RON</p>
+        <div>
+          {promotion ? <strike>{price}</strike> : <span>{price}</span>}
+
+          <span>{promotion && <span>{promotionPrice}</span>}</span>
+          <span>RON</span>
+        </div>
       </div>
     </div>
   );

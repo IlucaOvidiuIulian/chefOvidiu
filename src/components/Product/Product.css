@@ -1,2 +1,17 @@
 .product-box{
-   border:2px solid red;}
+   border:2px solid red;
+   background:var(--primary);
+   display:flex;
+   padding:1rem;
+   border-radius:15px;
+}
+
+.product-box img{
+   height:5rem;
+   margin-right:1rem;
+}
+.product-details h1{
+   color:var(--wild);
+   font-size:1.2rem;
+   margin-bottom:0.5rem; 
+}

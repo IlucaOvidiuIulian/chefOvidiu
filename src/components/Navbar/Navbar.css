@@ -51,6 +51,9 @@ nav a.active{
     cursor:pointer;
 }
 
+.login-nav-link:hover{
+    color:var(--wild);
+}
 .user-links h3{
     text-transform:capitalize;
 }

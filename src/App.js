@@ -23,6 +23,8 @@ import AuthLayout from "./Layouts/AuthLayout/AuthLayout";
 
 import { ProductProvider } from "./contexts/ProductContext";
 import { AuthProvider } from "./contexts/AuthContext";
+import Basket from "./pages/Basket/Basket";
+import { BasketProvider } from "./contexts/BasketContext";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -35,6 +37,7 @@ const router = createBrowserRouter(
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
       </Route>
+      <Route path="basket" element={<Basket />} />
     </Route>
   )
 );
@@ -43,7 +46,9 @@ export default function App() {
   return (
     <AuthProvider>
       <ProductProvider>
-        <RouterProvider router={router} />
+        <BasketProvider>
+          <RouterProvider router={router} />
+        </BasketProvider>
       </ProductProvider>
     </AuthProvider>
   );

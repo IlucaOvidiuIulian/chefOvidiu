@@ -5,9 +5,11 @@ import { ReactComponent as UserBasket } from "../../assets/others/basket-fill.sv
 import Logo from "../Logo/Logo";
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
+import { useBasket } from "../../contexts/BasketContext";
 
 export default function Navbar() {
   const { authUser, isLoggedIn } = useAuth();
+  const { getNumberOfProducts } = useBasket();
 
   return (
     <nav>
@@ -37,10 +39,10 @@ export default function Navbar() {
             </>
           )}
 
-          <button>
+          <NavLink to="/basket">
             <UserBasket />
-          </button>
-          <span className="basket-counter">5</span>
+          </NavLink>
+          <span className="basket-counter">{getNumberOfProducts()}</span>
         </div>
       </div>
     </nav>
