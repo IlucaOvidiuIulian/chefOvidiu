@@ -1,14 +1,12 @@
 .product-box{
-   border:2px solid red;
    background:var(--primary);
    display:flex;
    gap:1rem;
    align-content:center;
-   justify-content:center;
+   justify-content:flex-start;
    padding:1rem;
    border-radius:15px;
 }
-
 .product-box img{
    height:9rem;
    aspect-ratio:1/1;
@@ -16,6 +14,7 @@
 .product-details{
    display:flex;
    flex-direction:column;
+   width:100%;
    gap:0.5rem;
 }
 .product-details p {
@@ -28,9 +27,10 @@
    font-size:1.2rem;
 }
 .product-details div {
-
    display:flex;
    gap:0.5rem;
+   align-items:end;
+   height:100%;
    justify-content:flex-end;
    align-items:center;
 }

@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import "./Meniu.css";
 import MenuToolbar from "../../components/MenuToolbar/MenuToolbar";
 import { ProductContext } from "../../contexts/ProductContext";
@@ -15,8 +15,12 @@ export default function Meniu() {
     "Bauturi",
     "Deserturi",
   ];
-
   let products = useContext(ProductContext);
+  let [filteredProducts, setFilteredProducts] = useState([]);
+
+  const handleProductsFilter = (category) => {
+    setFilteredProducts();
+  };
 
   return (
     <div className="menu-container">

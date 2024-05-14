@@ -17,10 +17,16 @@ export function BasketProvider(props) {
       `Adding product with id ${product} and the name ${product} to basket`
     );
     setBasketProducts([...basketProducts, product]);
+    let basketProductsToSaveInDataBase = basketProducts;
+    basketProductsToSaveInDataBase.push(product);
+
     if (isLoggedIn) {
-      updateBasketToDatabase(basketProducts, authUser);
+      updateBasketToDatabase(basketProductsToSaveInDataBase, authUser);
     } else {
-      localStorage.setItem("BASKET", JSON.stringify(basketProducts));
+      localStorage.setItem(
+        "BASKET",
+        JSON.stringify(basketProductsToSaveInDataBase)
+      );
     }
   };
 
@@ -28,10 +34,16 @@ export function BasketProvider(props) {
     const updateBasket = [...basketProducts];
     updateBasket.splice(index, 1);
     setBasketProducts(updateBasket);
+    let basketProductsToSaveInDataBase = basketProducts;
+    basketProductsToSaveInDataBase.splice(index);
+
     if (isLoggedIn) {
-      updateBasketToDatabase(basketProducts, authUser);
+      updateBasketToDatabase(basketProductsToSaveInDataBase, authUser);
     } else {
-      localStorage.setItem("BASKET", JSON.stringify(basketProducts));
+      localStorage.setItem(
+        "BASKET",
+        JSON.stringify(basketProductsToSaveInDataBase)
+      );
     }
   };
   const removeAllProductsFromBasket = () => {
