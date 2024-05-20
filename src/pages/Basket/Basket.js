@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import "./Basket.css";
 import BasketProduct from "../../components/BasketProduct/BasketProduct";
-import Logo from "../../components/Logo/Logo";
 import { useBasket } from "../../contexts/BasketContext";
+import OrderForm from "../../components/OrderForm/OrderForm";
 export default function Basket() {
   const [showOrderForm, setShowOrderForm] = useState(false);
   const { basketProducts, removeAllProductsFromBasket } = useBasket();
+
   const handleOrderForm = () => {
     setShowOrderForm(true);
   };
+
   return (
     <>
       <div className="basket">
@@ -28,31 +30,7 @@ export default function Basket() {
           </div>
         </div>
       </div>
-      {showOrderForm && (
-        <div className="overlay">
-          <div className="order-form">
-            <Logo width={300} />
-            <form>
-              <input type="text" placeholder="Nume Prenume" value="" required />
-              <input type="text" placeholder="Adresa" required />
-              <input
-                type="number"
-                placeholder="Nr telefon"
-                maxLength="10"
-                required
-              />
-              <input
-                type="text"
-                placeholder="Nr card"
-                maxLength="19"
-                required
-              />
-
-              <input type="number" placeholder="cvv" required />
-            </form>
-          </div>
-        </div>
-      )}
+      {showOrderForm && <OrderForm />}
     </>
   );
 }
