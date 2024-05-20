@@ -1,7 +1,10 @@
-import React, { createContext, useState, useEffect } from "react";
+import React, { createContext, useState, useEffect, useContext } from "react";
 
 const ProductContext = createContext();
 
+export function useProduct() {
+  return useContext(ProductContext);
+}
 const ProductProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
 

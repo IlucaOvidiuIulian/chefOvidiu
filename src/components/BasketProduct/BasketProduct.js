@@ -1,12 +1,17 @@
 import React from "react";
 import "./BasketProduct.css";
+import { useProduct } from "../../contexts/ProductContext";
 export default function BasketProduct({ product }) {
-  console.log(product);
+  const allProductsWithDetails = useProduct();
+  const basketProducts = allProductsWithDetails.filter(
+    (prod) => prod.id === product
+  );
+  console.log(basketProducts);
   return (
     <div className="basket-product">
       <div>
-        <span style={{ fontWeight: "bold" }}>Product title</span>
-        <span> Price</span>
+        <span style={{ fontWeight: "bold" }}>{basketProducts.title}</span>
+        <span> {basketProducts.price}</span>
       </div>
       <div className="product-quantifier">
         <button>-</button>

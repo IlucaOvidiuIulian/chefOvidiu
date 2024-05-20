@@ -15,8 +15,8 @@ export default function Basket() {
     <>
       <div className="basket">
         <div className="basket-products">
-          {basketProducts?.map((basketProduct) => {
-            return <BasketProduct product={basketProduct} />;
+          {basketProducts?.map((basketProduct, i) => {
+            return <BasketProduct product={basketProduct} key={i} />;
           })}
         </div>
 
