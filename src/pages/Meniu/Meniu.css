@@ -1,0 +1,8 @@
+.menu-list {
+    padding-top: 4rem;
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+    max-height: 61 rem;
+    overflow:scroll;
+}

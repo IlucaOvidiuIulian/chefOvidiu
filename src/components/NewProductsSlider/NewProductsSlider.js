@@ -81,6 +81,9 @@ const NewProductsSlider = ({ products }) => {
               </span>
               {product.promotion && <span>{product.promotionPrice}</span>}
             </div>
+            <div>
+              <button>Adauga in cos</button>
+            </div>
           </div>
         ))}
       </div>

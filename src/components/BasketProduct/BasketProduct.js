@@ -1,23 +1,19 @@
 import React from "react";
 import "./BasketProduct.css";
-import { useProduct } from "../../contexts/ProductContext";
-export default function BasketProduct({ product }) {
-  const allProductsWithDetails = useProduct();
-  const basketProducts = allProductsWithDetails.filter(
-    (prod) => prod.id === product
-  );
-  console.log(basketProducts);
+
+export default function BasketProduct({ product, removeProductFromBasket, addProductToBasket, removeOneProductFromBasket, setFlagChangeBasket }) {
   return (
     <div className="basket-product">
       <div>
-        <span style={{ fontWeight: "bold" }}>{basketProducts.title}</span>
-        <span> {basketProducts.price}</span>
+        <span style={{ fontWeight: "bold" }}>{product.title}</span>
+        <span> {(product.price * product.numberOfProducts).toFixed(2)} Lei</span>
       </div>
       <div className="product-quantifier">
-        <button>-</button>
-        <span className="basket-prod-quantity">0</span>
-        <button>+</button>
+        <button onClick={() => removeOneProductFromBasket(product.id)}>-</button>
+        <span className="basket-prod-quantity">{product.numberOfProducts}</span>
+        <button onClick={() => addProductToBasket(product.id)}>+</button>
         <button
+          onClick={() => removeProductFromBasket(product.id)}
           style={{
             background: "var(--wild)",
             color: "var(--primary)",

@@ -25,7 +25,6 @@ import { ProductProvider } from "./contexts/ProductContext";
 import { AuthProvider } from "./contexts/AuthContext";
 import Basket from "./pages/Basket/Basket";
 import { BasketProvider } from "./contexts/BasketContext";
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
@@ -43,6 +42,7 @@ const router = createBrowserRouter(
 );
 
 export default function App() {
+
   return (
     <AuthProvider>
       <ProductProvider>

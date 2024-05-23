@@ -3,9 +3,13 @@ import { useAuth } from "../../contexts/AuthContext";
 import { useState } from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
+import login from "../../apis/AuthApis"
+import { useBasket } from "../../contexts/BasketContext"
 
 const Login = () => {
   const { setAuthUser, setIsLoggedIn } = useAuth();
+  const { setBasket } = useBasket();
+
   const [loginForm, setLoginForm] = useState({
     email: "",
     password: "",
@@ -19,39 +23,14 @@ const Login = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  function handleSubmit(e) {
     e.preventDefault();
+    
+    // Take user login input data
     const { email, password } = loginForm;
 
-    if (email == null) {
-      // handle error submit
-    }
-    if (password == null) {
-      // handle password submit
-    }
-
-    fetch(`http://localhost:4000/users?email=${email}&password=${password}`)
-      .then((res) => {
-        if (!res.ok) {
-          setIsLoggedIn(false);
-          setAuthUser(null);
-          console.log("Logging failed! Error from the backend json");
-        }
-
-        return res.json();
-      })
-      .then((data) => {
-        if (data[0] == null || data[0] === "") {
-          setIsLoggedIn(false);
-          setAuthUser(null);
-          console.log("Logging failed! Username or password wrong");
-        }
-        let user = data[0];
-        user.password = "";
-        setIsLoggedIn(true);
-        setAuthUser(user);
-        console.log("Logged succesfully", user.username);
-      });
+    // Login
+    login(email, password, setAuthUser, setIsLoggedIn, setBasket);
   };
 
   return (

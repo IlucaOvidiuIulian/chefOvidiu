@@ -2,21 +2,12 @@ import React from "react";
 import { useAuth } from "../../contexts/AuthContext";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { register } from "../../apis/AuthApis";
+import { useBasket } from "../../contexts/BasketContext";
 
-class UserRegisterRequest {
-  constructor(username, email, password) {
-    this.username = username;
-    this.email = email;
-    this.password = password;
-    this.permission = "client";
-    this.basket = [];
-    this.orders = [];
-    this.cards = [];
-    this.locations = [];
-  }
-}
 const Register = () => {
   const { setAuthUser, setIsLoggedIn } = useAuth();
+  const { setBasket } = useBasket();
   const [registerForm, setRegisterForm] = useState({
     email: "",
     password: "",
@@ -39,48 +30,18 @@ const Register = () => {
       console.log("Logging failed. Reason: input data is mandatory");
     }
 
-    const userRegisterRequest = new UserRegisterRequest(
-      username,
-      email,
-      password
-    );
+    const userRegisterRequest = {
+      username: username,
+      email: email,
+      password: password,
+      permission: "client",
+      basket: [],
+      orders: [],
+      cards: [],
+      locations: []
+    }
 
-    // Check if user already exists
-    fetch(`http://localhost:4000/users?email=${email}`)
-      .then((res) => {
-        if (!res.ok) {
-          setIsLoggedIn(false);
-          setAuthUser(null);
-          console.log("Logging failed! Error from the backend json");
-        }
-
-        return res.json();
-      })
-      .then((data) => {
-        if (data[0] === null || data[0] === undefined) {
-          // create new user if not already exists
-          fetch("http://localhost:4000/users", {
-            method: "POST",
-            body: JSON.stringify(userRegisterRequest),
-          })
-            .then((res) => {
-              if (!res.ok) {
-                setIsLoggedIn(false);
-                setAuthUser(null);
-              }
-              return res.json();
-            })
-            .then((data) => {
-              console.log("am intrat in handlesubmit6");
-              data.password = "";
-              setIsLoggedIn(true);
-              setAuthUser(data);
-              console.log("Registered");
-            });
-        } else {
-          // throw error if already exists;
-        }
-      });
+    register(userRegisterRequest, setAuthUser, setIsLoggedIn, setBasket);
   };
 
   return (
