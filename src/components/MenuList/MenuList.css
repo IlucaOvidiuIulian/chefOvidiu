@@ -3,6 +3,6 @@
     display:flex;
     flex-direction:column;
     gap:0.5rem;
-    max-height: 61rem;
+    max-height: 32rem;
     overflow:scroll;
 }

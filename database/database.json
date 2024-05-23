@@ -359,7 +359,15 @@
       "email": "ovidiu@gmail.com",
       "password": "ovidiu",
       "permission": "client",
-      "basket": [],
+      "basket": [
+        "2",
+        "3",
+        "2",
+        "3",
+        "2",
+        "3",
+        "2"
+      ],
       "orders": [],
       "cards": [],
       "locations": []

@@ -16,16 +16,24 @@ export default function Meniu() {
     "Deserturi",
   ];
   let { products } = useProduct();
-  let [filteredProducts, setFilteredProducts] = useState([]);
+  let [filteredProducts, setFilteredProducts] = useState(products);
 
   const handleProductsFilter = (category) => {
-    setFilteredProducts();
+    if (category === "All") {
+      setFilteredProducts(products);
+    } else
+      setFilteredProducts(
+        products.filter((product) => product.category === category)
+      );
   };
 
   return (
     <div className="menu-container">
-      <MenuToolbar categories={categories} />
-      <MenuList products={products} />
+      <MenuToolbar
+        categories={categories}
+        onCategorySelect={handleProductsFilter}
+      />
+      <MenuList products={filteredProducts} />
     </div>
   );
 }
