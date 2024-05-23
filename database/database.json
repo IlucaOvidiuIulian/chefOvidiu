@@ -359,15 +359,7 @@
       "email": "ovidiu@gmail.com",
       "password": "ovidiu",
       "permission": "client",
-      "basket": [
-        "2",
-        "3",
-        "2",
-        "3",
-        "2",
-        "3",
-        "2"
-      ],
+      "basket": [],
       "orders": [],
       "cards": [],
       "locations": []
@@ -563,7 +555,7 @@
     },
     {
       "id": "21",
-      "title": "Tochitura Moldoveneasca",
+      "title": "Tochitura",
       "category": "Preparate",
       "price": 48.9,
       "description": "tochitura (spata de porc, piept de porc, carnati semiafumati, cimbru, untura, vin alb, usturoi, supa de legume, mujdei, sare, piper), ou, ulei vegetal de floarea soarelui, branza burduf, mamaliguta - 550g Alergeni: lactoza, ou, telina, sulfiti, soia",

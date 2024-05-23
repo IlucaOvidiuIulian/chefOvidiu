@@ -4,8 +4,8 @@
     width:100%;
     align-items:center;
     background-color:var(--primary);
-    padding:1rem 0;
-    height:10rem;
+
+    height:11rem;
 }
 .slides-container{
     display:flex;
@@ -30,24 +30,28 @@
 .slide h6, .slide span{
     font-size:0.7rem;
     color:var(--wild);
-
 }
 .slide span{
-    margin-right:0.2rem;
+    margin-right:0.2rem   
 }
-
 .slider button {
     color: var(--primary);
-    border-radius: 50%;
-    padding: 0.3rem;
+    border-radius: 1rem;
+    padding: 0.3rem 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor:pointer;
   }
   
-  .design-line{
+.slider button:hover{
+    background:var(--wild);
+}
+.design-line{
     width:2px;
     height:95%;
     background-color:var(--secondary);
-  }
+}
+.new-product-slider-product-slider{
+    padding-bottom:0.5rem;
+}

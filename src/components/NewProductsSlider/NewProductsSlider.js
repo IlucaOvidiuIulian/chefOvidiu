@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./NewProductsSlider.css";
 import ImageHelper from "../../helpers/ImageHelper";
+import { useBasket } from "../../contexts/BasketContext";
 
 const LeftArrowIcon = () => (
   <svg
@@ -64,6 +65,8 @@ const NewProductsSlider = ({ products }) => {
       ? newProducts.slice(startIndex, endIndex)
       : newProducts.slice(startIndex).concat(newProducts.slice(0, endIndex));
 
+  const { addProductToBasket } = useBasket();
+
   return (
     <div className="slider">
       <button onClick={handleClickPrev}>
@@ -75,14 +78,16 @@ const NewProductsSlider = ({ products }) => {
           <div key={product.id} className="slide">
             <ImageHelper product={product} />
             <h6>{product.title}</h6>
-            <div>
+            <div className="new-product-slider-product-slider">
               <span className={product.promotion ? "price-on-promotion" : ""}>
                 {product.price}
               </span>
               {product.promotion && <span>{product.promotionPrice}</span>}
             </div>
             <div>
-              <button>Adauga in cos</button>
+              <button onClick={() => addProductToBasket(product.id)}>
+                Adauga in cos
+              </button>
             </div>
           </div>
         ))}
