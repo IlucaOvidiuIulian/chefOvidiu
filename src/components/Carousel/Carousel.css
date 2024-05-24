@@ -25,9 +25,9 @@
     color:var(--wild);
     transition:background-color 100ms ease-in-out;
 }
-.img-slider-btn:hover{
+/* .img-slider-btn:hover{
     background-color:rgb(0,0,0, 0.2);
-}
+} */
 .carousel-inner{
     width:100%;
     height:100%;
@@ -50,6 +50,27 @@
     display:flex;
     align-items:center;
     justify-content:center;
+}
 
-   
+.carousel-overlay{
+    height:100%;
+    width:100%;
+    position:absolute;
+    background:rgba(0, 0 ,0, 0.4);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:3rem;
+}
+.carousel-overlay h1{
+    text-align:center;
+}
+
+.carousel-overlay a {
+    text-transform:uppercase;
+    background:var(--wild);
+    color:var(--primary);
+    padding:0.3rem 4rem;
+    border-radius:1.5rem;
 }

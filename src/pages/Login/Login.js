@@ -3,8 +3,8 @@ import { useAuth } from "../../contexts/AuthContext";
 import { useState } from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
-import login from "../../apis/AuthApis"
-import { useBasket } from "../../contexts/BasketContext"
+import login from "../../apis/AuthApis";
+import { useBasket } from "../../contexts/BasketContext";
 
 const Login = () => {
   const { setAuthUser, setIsLoggedIn } = useAuth();
@@ -25,13 +25,13 @@ const Login = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
-    
+
     // Take user login input data
     const { email, password } = loginForm;
 
     // Login
     login(email, password, setAuthUser, setIsLoggedIn, setBasket);
-  };
+  }
 
   return (
     <form onSubmit={handleSubmit}>

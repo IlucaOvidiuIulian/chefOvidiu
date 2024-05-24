@@ -44,19 +44,15 @@ const NewProductsSlider = ({ products }) => {
   };
 
   const now = new Date();
-  const lastMonth = new Date(
+  const twoWeeksAgo = new Date(
     now.getFullYear(),
-    now.getMonth() - 1,
-    now.getDate()
+    now.getMonth(),
+    now.getDate() - 14
   );
 
   const newProducts = products.filter((product) => {
     const productDate = new Date(product.date);
-    return (
-      product.category !== "Bauturi" &&
-      productDate >= lastMonth &&
-      productDate <= now
-    );
+    return productDate >= twoWeeksAgo && productDate <= now;
   });
 
   const endIndex = (startIndex + itemsToShow) % newProducts.length;

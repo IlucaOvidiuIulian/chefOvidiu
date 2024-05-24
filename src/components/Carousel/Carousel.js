@@ -1,6 +1,7 @@
 // Carousel.js
 import React, { useEffect, useState } from "react";
 import "./Carousel.css";
+import { Link } from "react-router-dom";
 
 export default function Carousel({ imageUrls }) {
   const [imageIndex, setImageIndex] = useState(0);
@@ -38,17 +39,24 @@ export default function Carousel({ imageUrls }) {
             />
           );
         })}
+        <div className="carousel-overlay">
+          <div>
+            <h1>Livram gratuit</h1>
+            <h1>NON STOP</h1>
+          </div>
+          <Link to="/meniu">Meniu</Link>
+        </div>
       </div>
-      <button
+      {/* <button
         className="img-slider-btn"
         style={{ left: 0 }}
         onClick={showPrev}
-      ></button>
-      <button
+      ></button> */}
+      {/* <button
         className="img-slider-btn"
         style={{ right: 0 }}
         onClick={showNext}
-      ></button>
+      ></button> */}
       <div className="slider-btns">
         {imageUrls.map((_, index) => {
           return (
