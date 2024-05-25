@@ -38,15 +38,15 @@ const Register = () => {
       basket: [],
       orders: [],
       cards: [],
-      locations: []
-    }
+      locations: [],
+    };
 
     register(userRegisterRequest, setAuthUser, setIsLoggedIn, setBasket);
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2>Inregistreaza-te</h2>
+      <h2>Înregistrează-te</h2>
       <input
         type="text"
         name="username"

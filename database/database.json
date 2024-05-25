@@ -269,92 +269,7 @@
   ],
   "users": [
     {
-      "id": "9236",
-      "username": "Tata",
-      "email": "tata@gmail.com",
-      "password": "tata",
-      "permission": "client",
-      "basket": [],
-      "orders": [
-        {
-          "name": "",
-          "address": "",
-          "phoneNumber": "",
-          "cardName": "",
-          "cardOwnerName": "",
-          "expireDate": "",
-          "cvc": "",
-          "": "12312312",
-          "ordered_products": [
-            "2",
-            "2",
-            "2",
-            "2",
-            "2"
-          ]
-        },
-        {
-          "address": "Adada",
-          "phoneNumber": "2112312",
-          "cardNumber": "123131",
-          "cardName": "",
-          "cardOwnerName": "12312312",
-          "expireDate": "31231",
-          "cvc": "312312312",
-          "ordered_products": [
-            "2",
-            "2",
-            "2"
-          ]
-        },
-        {
-          "address": "123123",
-          "phoneNumber": "12312",
-          "cardNumber": "12312",
-          "cardName": "",
-          "cardOwnerName": "12312",
-          "expireDate": "12312",
-          "cvc": "12312",
-          "ordered_products": [
-            "2",
-            "2",
-            "2"
-          ]
-        }
-      ],
-      "cards": [],
-      "locations": []
-    },
-    {
-      "id": "9d45",
-      "username": "alex@gmail.com",
-      "email": "alex@gmail.com",
-      "password": "alex",
-      "permission": "client",
-      "basket": [],
-      "orders": [
-        {
-          "name": "",
-          "address": "",
-          "phoneNumber": "",
-          "cardName": "",
-          "cardOwnerName": "",
-          "expireDate": "",
-          "cvc": "",
-          "": "2342343",
-          "ordered_products": [
-            "2",
-            "2",
-            "2",
-            "2"
-          ]
-        }
-      ],
-      "cards": [],
-      "locations": []
-    },
-    {
-      "id": "c966",
+      "id": "bbd9",
       "username": "ovidiu",
       "email": "ovidiu@gmail.com",
       "password": "ovidiu",
@@ -372,7 +287,7 @@
       "category": "Pizza",
       "price": 41.9,
       "description": "blat pizza, mix branzeturi (mozzarella, cascaval), sos de rosii dulce, bacon, salam demisec, piept pui, sunca de porc, salam vara - 900g / 1250g Alergeni: gluten, lactoza, telina, soia, mustar",
-      "date": "2024-05-10T12:00:00Z",
+      "date": "2024-05-12T12:00:00Z",
       "promotion": false,
       "promotionPrice": "35",
       "availability": true
@@ -394,7 +309,7 @@
       "category": "Pizza",
       "price": 48.9,
       "description": "blat pizza, mix branzeturi (mozzarella, cascaval), sos de rosii dulce, salam de cerb, ceapa verde, ciuperci, ulei vegetal de masline aromatizat cu trufe, mix de ulei(masline, floarea soarelui) - 750g / 1100g Alergeni: gluten, lactoza, mustar",
-      "date": "2024-05-10T12:00:00Z",
+      "date": "2024-05-12T12:00:00Z",
       "promotion": true,
       "promotionPrice": "35",
       "availability": true
@@ -427,7 +342,7 @@
       "category": "Pizza",
       "price": 34.9,
       "description": "blat pizza, mix branzeturi (mozzarella, cascaval), piept pui, sos de rosii dulce, rosii bruschette, masline kalamata - 750g / 1050g Alergeni: gluten, lactoza, mustar",
-      "date": "2024-05-10T12:00:00Z",
+      "date": "2024-05-14T12:00:00Z",
       "promotion": true,
       "promotionPrice": "35",
       "availability": true
@@ -460,7 +375,7 @@
       "category": "Paste",
       "price": 32.9,
       "description": "PICANT - penne, sos napoli, bacon, sunca de pui, supa de legume, mix de ulei (masline, floarea soarelui), mix de branza tare (parmiggiano, grana padano), ardei iute, sare, piper - 400g Alergeni: gluten, soia, telina, lactoza, ou",
-      "date": "2024-05-10T12:00:00Z",
+      "date": "2024-05-17T12:00:00Z",
       "promotion": true,
       "promotionPrice": "35",
       "availability": true
@@ -471,7 +386,7 @@
       "category": "Paste",
       "price": 47.9,
       "description": "penne, creveti, sos napoli, smantana, supa de legume, unt, mix de branza tare (parmiggiano, grana padano), vin alb, patrunjel, sare, piper - 400g Alergeni: crustacee, lactoza, gluten, ou, telina, sulfiti",
-      "date": "2024-05-10T12:00:00Z",
+      "date": "2024-05-10T17:00:00Z",
       "promotion": true,
       "promotionPrice": "35",
       "availability": true
@@ -537,7 +452,7 @@
       "category": "Ciorbe",
       "price": 18.9,
       "description": "cartofi, rosii, sfecla roșie, amestec legume (morcov, gulii, pastai, mazare), ceapa, telina, apa, bors, patrunjel si leustean verde, ulei vegetal de floarea-soarelui, sare - 380g Alergeni: gluten, telina",
-      "date": "2024-05-10T12:00:00Z",
+      "date": "2024-05-10T17:00:00Z",
       "promotion": true,
       "promotionPrice": "35",
       "availability": true

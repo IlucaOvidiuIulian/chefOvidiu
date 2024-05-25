@@ -1,19 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { useAuth } from "../../contexts/AuthContext";
-import { useState } from "react";
-import "./Login.css";
-import { Link } from "react-router-dom";
-import login from "../../apis/AuthApis";
 import { useBasket } from "../../contexts/BasketContext";
+import "./Login.css";
+import { Link, Navigate } from "react-router-dom";
+import login from "../../apis/AuthApis";
 
 const Login = () => {
-  const { setAuthUser, setIsLoggedIn } = useAuth();
+  const { setAuthUser, setIsLoggedIn, isLoggedIn } = useAuth();
   const { setBasket } = useBasket();
 
   const [loginForm, setLoginForm] = useState({
     email: "",
     password: "",
   });
+
+  const [redirectToHome, setRedirectToHome] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -31,6 +32,12 @@ const Login = () => {
 
     // Login
     login(email, password, setAuthUser, setIsLoggedIn, setBasket);
+
+    setRedirectToHome(true);
+  }
+
+  if (isLoggedIn || redirectToHome) {
+    return <Navigate to="/" />;
   }
 
   return (

@@ -44,7 +44,7 @@ export default function Carousel({ imageUrls }) {
             <h1>Livram gratuit</h1>
             <h1>NON STOP</h1>
           </div>
-          <Link to="/meniu">Meniu</Link>
+          <Link to="/meniu">COMANDA</Link>
         </div>
       </div>
       {/* <button
