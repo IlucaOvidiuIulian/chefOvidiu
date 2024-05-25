@@ -55,11 +55,11 @@ const NewProductsSlider = ({ products }) => {
     return productDate >= twoWeeksAgo && productDate <= now;
   });
 
-  const endIndex = (startIndex + itemsToShow) % newProducts.length;
-  const displayedProducts =
-    startIndex < endIndex
-      ? newProducts.slice(startIndex, endIndex)
-      : newProducts.slice(startIndex).concat(newProducts.slice(0, endIndex));
+  const displayedProducts = [];
+  for (let i = 0; i < itemsToShow; i++) {
+    const index = (startIndex + i) % newProducts.length;
+    displayedProducts.push(newProducts[index]);
+  }
 
   const { addProductToBasket } = useBasket();
 
