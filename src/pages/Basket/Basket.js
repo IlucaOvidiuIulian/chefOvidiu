@@ -70,7 +70,12 @@ export default function Basket() {
       newBasket
     );
 
-    setMergedBasketProducts(newBasket);
+    // Fix for rendering shuffle behavior of basket products list..
+    const sortedBasketProducts = newBasket.slice().sort((a, b) => {
+      return a.title.localeCompare(b.title);
+    });
+
+    setMergedBasketProducts(sortedBasketProducts);
 
     let sum = 0;
     newBasket.forEach((product) => {

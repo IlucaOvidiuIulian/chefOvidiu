@@ -6,7 +6,6 @@ export default function BasketProduct({
   removeProductFromBasket,
   addProductToBasket,
   removeOneProductFromBasket,
-  setFlagChangeBasket,
 }) {
   return (
     <div className="basket-product">
