@@ -19,253 +19,8 @@
         "creation_date": "2024-05-21T17:07:01.387Z"
       },
       "id": "58aa"
-    },
-    {
-      "0": {
-        "0": {
-          "numePrenume": "Burgeri",
-          "address": "adasd",
-          "phoneNumber": "123123",
-          "cardNumber": "12312",
-          "cardOwnerName": "123123",
-          "expireDate": "12312",
-          "cvc": "312",
-          "ordered_products": [
-            "2",
-            "2",
-            "2",
-            "2",
-            "2"
-          ],
-          "creation_date": "2024-05-21T17:07:01.387Z"
-        },
-        "id": "58aa"
-      },
-      "1": {
-        "numePrenume": "Burgeri",
-        "address": "adasd",
-        "phoneNumber": "123123",
-        "cardNumber": "12312",
-        "cardOwnerName": "123121233",
-        "expireDate": "12312",
-        "cvc": "312",
-        "ordered_products": [],
-        "creation_date": "2024-05-21T17:07:29.786Z"
-      },
-      "id": "8051"
-    },
-    {
-      "0": {
-        "0": {
-          "numePrenume": "Burgeri",
-          "address": "adasd",
-          "phoneNumber": "123123",
-          "cardNumber": "12312",
-          "cardOwnerName": "123123",
-          "expireDate": "12312",
-          "cvc": "312",
-          "ordered_products": [
-            "2",
-            "2",
-            "2",
-            "2",
-            "2"
-          ],
-          "creation_date": "2024-05-21T17:07:01.387Z"
-        },
-        "id": "58aa"
-      },
-      "1": {
-        "0": {
-          "0": {
-            "numePrenume": "Burgeri",
-            "address": "adasd",
-            "phoneNumber": "123123",
-            "cardNumber": "12312",
-            "cardOwnerName": "123123",
-            "expireDate": "12312",
-            "cvc": "312",
-            "ordered_products": [
-              "2",
-              "2",
-              "2",
-              "2",
-              "2"
-            ],
-            "creation_date": "2024-05-21T17:07:01.387Z"
-          },
-          "id": "58aa"
-        },
-        "1": {
-          "numePrenume": "Burgeri",
-          "address": "adasd",
-          "phoneNumber": "123123",
-          "cardNumber": "12312",
-          "cardOwnerName": "123121233",
-          "expireDate": "12312",
-          "cvc": "312",
-          "ordered_products": [],
-          "creation_date": "2024-05-21T17:07:29.786Z"
-        },
-        "id": "8051"
-      },
-      "2": {
-        "numePrenume": "12312",
-        "address": "12312",
-        "phoneNumber": "312312",
-        "cardNumber": "132312",
-        "cardOwnerName": "3123",
-        "expireDate": "12312",
-        "cvc": "12312",
-        "ordered_products": [
-          "2",
-          "2",
-          "2"
-        ],
-        "creation_date": "2024-05-21T17:09:58.570Z"
-      },
-      "id": "f567"
-    },
-    {
-      "0": {
-        "0": {
-          "numePrenume": "Burgeri",
-          "address": "adasd",
-          "phoneNumber": "123123",
-          "cardNumber": "12312",
-          "cardOwnerName": "123123",
-          "expireDate": "12312",
-          "cvc": "312",
-          "ordered_products": [
-            "2",
-            "2",
-            "2",
-            "2",
-            "2"
-          ],
-          "creation_date": "2024-05-21T17:07:01.387Z"
-        },
-        "id": "58aa"
-      },
-      "1": {
-        "0": {
-          "0": {
-            "numePrenume": "Burgeri",
-            "address": "adasd",
-            "phoneNumber": "123123",
-            "cardNumber": "12312",
-            "cardOwnerName": "123123",
-            "expireDate": "12312",
-            "cvc": "312",
-            "ordered_products": [
-              "2",
-              "2",
-              "2",
-              "2",
-              "2"
-            ],
-            "creation_date": "2024-05-21T17:07:01.387Z"
-          },
-          "id": "58aa"
-        },
-        "1": {
-          "numePrenume": "Burgeri",
-          "address": "adasd",
-          "phoneNumber": "123123",
-          "cardNumber": "12312",
-          "cardOwnerName": "123121233",
-          "expireDate": "12312",
-          "cvc": "312",
-          "ordered_products": [],
-          "creation_date": "2024-05-21T17:07:29.786Z"
-        },
-        "id": "8051"
-      },
-      "2": {
-        "0": {
-          "0": {
-            "numePrenume": "Burgeri",
-            "address": "adasd",
-            "phoneNumber": "123123",
-            "cardNumber": "12312",
-            "cardOwnerName": "123123",
-            "expireDate": "12312",
-            "cvc": "312",
-            "ordered_products": [
-              "2",
-              "2",
-              "2",
-              "2",
-              "2"
-            ],
-            "creation_date": "2024-05-21T17:07:01.387Z"
-          },
-          "id": "58aa"
-        },
-        "1": {
-          "0": {
-            "0": {
-              "numePrenume": "Burgeri",
-              "address": "adasd",
-              "phoneNumber": "123123",
-              "cardNumber": "12312",
-              "cardOwnerName": "123123",
-              "expireDate": "12312",
-              "cvc": "312",
-              "ordered_products": [
-                "2",
-                "2",
-                "2",
-                "2",
-                "2"
-              ],
-              "creation_date": "2024-05-21T17:07:01.387Z"
-            },
-            "id": "58aa"
-          },
-          "1": {
-            "numePrenume": "Burgeri",
-            "address": "adasd",
-            "phoneNumber": "123123",
-            "cardNumber": "12312",
-            "cardOwnerName": "123121233",
-            "expireDate": "12312",
-            "cvc": "312",
-            "ordered_products": [],
-            "creation_date": "2024-05-21T17:07:29.786Z"
-          },
-          "id": "8051"
-        },
-        "2": {
-          "numePrenume": "12312",
-          "address": "12312",
-          "phoneNumber": "312312",
-          "cardNumber": "132312",
-          "cardOwnerName": "3123",
-          "expireDate": "12312",
-          "cvc": "12312",
-          "ordered_products": [
-            "2",
-            "2",
-            "2"
-          ],
-          "creation_date": "2024-05-21T17:09:58.570Z"
-        },
-        "id": "f567"
-      },
-      "3": {
-        "numePrenume": "12312",
-        "address": "12312",
-        "phoneNumber": "312312",
-        "cardNumber": "132312",
-        "cardOwnerName": "3123",
-        "expireDate": "12312",
-        "cvc": "12312",
-        "ordered_products": [],
-        "creation_date": "2024-05-21T17:10:11.553Z"
-      },
-      "id": "3aff"
     }
+   
   ],
   "users": [
     {
@@ -274,7 +29,18 @@
       "email": "ovidiu@gmail.com",
       "password": "ovidiu",
       "permission": "client",
-      "basket": [],
+      "basket": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
       "orders": [],
       "cards": [],
       "locations": []
@@ -287,7 +53,7 @@
       "category": "Pizza",
       "price": 41.9,
       "description": "blat pizza, mix branzeturi (mozzarella, cascaval), sos de rosii dulce, bacon, salam demisec, piept pui, sunca de porc, salam vara - 900g / 1250g Alergeni: gluten, lactoza, telina, soia, mustar",
-      "date": "2024-05-12T12:00:00Z",
+      "date": "2024-05-17T12:00:00Z",
       "promotion": false,
       "promotionPrice": "35",
       "availability": true
@@ -298,7 +64,7 @@
       "category": "Pizza",
       "price": 41.9,
       "description": "blat pizza, mix branzeturi (mozzarella, cascaval), sos de rosii dulce, sunca de porc, salam de vara, ciuperci - 700g / 1000g Alergeni: gluten, lactoza, soia, telina",
-      "date": "2024-05-10T12:00:00Z",
+      "date": "2024-05-10T17:00:00Z",
       "promotion": true,
       "promotionPrice": "35",
       "availability": true
@@ -309,7 +75,7 @@
       "category": "Pizza",
       "price": 48.9,
       "description": "blat pizza, mix branzeturi (mozzarella, cascaval), sos de rosii dulce, salam de cerb, ceapa verde, ciuperci, ulei vegetal de masline aromatizat cu trufe, mix de ulei(masline, floarea soarelui) - 750g / 1100g Alergeni: gluten, lactoza, mustar",
-      "date": "2024-05-12T12:00:00Z",
+      "date": "2024-05-17T12:00:00Z",
       "promotion": true,
       "promotionPrice": "35",
       "availability": true
@@ -320,7 +86,7 @@
       "category": "Pizza",
       "price": 44.9,
       "description": "blat pizza, mix branzeturi (mozzarella, cascaval), sos de rosii dulce, sunca de porc, salam vara, ardei gras, ciuperci - 700g / 1050g Alergeni: gluten, lactoza, soia, telina",
-      "date": "2024-05-10T12:00:00Z",
+      "date": "2024-05-10T17:00:00Z",
       "promotion": true,
       "promotionPrice": "35",
       "availability": true
@@ -331,7 +97,7 @@
       "category": "Pizza",
       "price": 53.4,
       "description": "blat pizza, mix branzeturi (mozzarella, cascaval), sos de rosii dulce, branza brie, fasole, mix de branza tare (parmiggiano, grana padano) nachos - 700g / 1000g Alergeni: lactoza, gluten, ou",
-      "date": "2024-05-10T12:00:00Z",
+      "date": "2024-05-10T17:00:00Z",
       "promotion": true,
       "promotionPrice": "35",
       "availability": true
@@ -342,7 +108,7 @@
       "category": "Pizza",
       "price": 34.9,
       "description": "blat pizza, mix branzeturi (mozzarella, cascaval), piept pui, sos de rosii dulce, rosii bruschette, masline kalamata - 750g / 1050g Alergeni: gluten, lactoza, mustar",
-      "date": "2024-05-14T12:00:00Z",
+      "date": "2024-05-17T12:00:00Z",
       "promotion": true,
       "promotionPrice": "35",
       "availability": true
@@ -353,7 +119,7 @@
       "category": "Paste",
       "price": 37.9,
       "description": "spaghette, smantana, bacon, mix de ulei (masline, floarea soarelui), mix de branza tare (parmiggiano, grana padano), sare, piper - 400g Alergeni: gluten, lactoza, ou",
-      "date": "2024-05-10T12:00:00Z",
+      "date": "2024-05-17T12:00:00Z",
       "promotion": true,
       "promotionPrice": "35",
       "availability": true
@@ -364,7 +130,7 @@
       "category": "Paste",
       "price": 35.9,
       "description": "spaghette, sos bolognese (sos de rosii dulce, carne tocata (carne porc, carne vita) ceapa, morcov, telina, pasta de tomate), sos napoli, mix de branza tare (parmiggiano, grana padano) - 400g Alergeni: gluten, telina, lactoza, ou",
-      "date": "2024-05-10T12:00:00Z",
+      "date": "2024-05-17T12:00:00Z",
       "promotion": true,
       "promotionPrice": "35",
       "availability": true
@@ -386,7 +152,7 @@
       "category": "Paste",
       "price": 47.9,
       "description": "penne, creveti, sos napoli, smantana, supa de legume, unt, mix de branza tare (parmiggiano, grana padano), vin alb, patrunjel, sare, piper - 400g Alergeni: crustacee, lactoza, gluten, ou, telina, sulfiti",
-      "date": "2024-05-10T17:00:00Z",
+      "date": "2024-05-17T17:00:00Z",
       "promotion": true,
       "promotionPrice": "35",
       "availability": true

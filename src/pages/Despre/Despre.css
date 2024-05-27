@@ -1,0 +1,11 @@
+.about-container{
+    background:var(--primary);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    padding:2rem;
+    width:48rem;
+    margin:2rem auto;
+    gap:2rem;
+}

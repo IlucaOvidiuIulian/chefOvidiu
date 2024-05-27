@@ -8,9 +8,8 @@ import { useProduct } from "../../contexts/ProductContext";
 
 const carouselImages = [img1, img2, img3];
 export default function Home() {
+  let { products } = useProduct();
 
-  let { products} = useProduct();
-  
   return (
     <div className="home-page">
       <Carousel imageUrls={carouselImages} />

@@ -4,6 +4,7 @@ import { useAuth } from "../../contexts/AuthContext";
 import { useBasket } from "../../contexts/BasketContext";
 import createOrder from "../../apis/OrderApis";
 import { useState } from "react";
+import "./OrderForm.css";
 
 export default function OrderForm() {
   const { isLoggedIn, authUser } = useAuth();
@@ -40,12 +41,13 @@ export default function OrderForm() {
     createOrder(newOrder, authUser, removeAllProductsFromBasket);
   }
 
+  console.log(authUser);
   return (
     <div className="overlay">
       <div className="order-form">
-        <Logo width={300} />
+        <Logo width={400} />
         <form onSubmit={handleSubmit}>
-          {!isLoggedIn && (
+          {/* {!isLoggedIn && (
             <input
               type="text"
               name="numePrenume"
@@ -54,7 +56,16 @@ export default function OrderForm() {
               maxLength="150"
               required
             />
-          )}
+          )} */}
+          <input
+            type="text"
+            name="numePrenume"
+            onChange={handleChange}
+            placeholder="Nume Prenume"
+            maxLength="150"
+            value={isLoggedIn ? authUser.username : ""}
+            required
+          />
           <input
             type="text"
             name="address"
@@ -71,7 +82,6 @@ export default function OrderForm() {
             maxLength="10"
             required
           />
-          <label> Card </label>
           <input
             type="number"
             name="cardNumber"

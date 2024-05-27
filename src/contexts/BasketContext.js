@@ -48,11 +48,8 @@ export function BasketProvider(props) {
     console.log(
       `BASKET UPDATE: Remove product with ID ${productId}. Basket length ${basketProducts.length}`
     );
-    let newBasket = [...basketProducts];
-    let indexToRemove = basketProducts.indexOf(productId);
-    if (indexToRemove !== -1) {
-      newBasket.splice(indexToRemove);
-    }
+
+    const newBasket = basketProducts.filter((product) => product !== productId);
 
     storeBasket(isLoggedIn, newBasket, authUser, setBasketProducts);
   };
